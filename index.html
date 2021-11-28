@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Anagram</title>
+</head>
+<body>
+    <script>
+       function Ana_gram(){
+
+        var str1 = prompt("Enter First String");
+        var str2 = prompt("Enter Second String");
+
+        var firstStr = str1.split('').sort().join('').toLowerCase();
+        var secondStr = str2.split('').sort().join('').toLowerCase();
+
+        if (firstStr === secondStr) {
+            console.log("This String is Anagram ");
+        } else {
+            console.log("This String is not an Anagram ! ");
+        }
+        }
+        Ana_gram();
+    </script>
+</body>
+</html>
